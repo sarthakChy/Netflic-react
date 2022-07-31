@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: white;
+    overflow-x: hidden;
+    background-color: black;
+
+}
+hr{
+    margin: 5px 0;
+    border: 6px solid #181818;
+}
+.showcase{
+    background: url('../img/bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+.showcase::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    background:rgba(0,0,0,0.6);
+    box-shadow: inset 0 100px 36px -28px rgba(0, 0, 0, 0.582), inset 0 -100px 36px -28px rgba(0, 0, 0, 0.582);
+
+}
+.showcase-header{
+    z-index: 2;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+.showcase-header .lang{
+  display: inline-block;
+  position: absolute;
+  right: 14%;
+  top: 30px;
+  border: 2px;
+  border-style: solid;
+  border-color: white;
+}
+.showcase-header .lang i{
+  padding: 0 5px;
+  font-size: 15px;
+}
+.showcase-header .lang li{
+  list-style: none;
+  padding: 5px 12px;
+}
+.showcase-header .lang a{
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+
+}
+.showcase-textContainer{
+    z-index: 2;
+    display:flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    height: 60%;
+    bottom: -50px;
+
+}
+.showcase-textContainer .showcase-text {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 60%;
+    top: 10%;
+    margin: 20px;
+
+
+}
+.showcase-textContainer .showcase-textarea{
+    position: relative;
+    display: inline-block;
+    flex-direction: column;
+}
+.showcase-textContainer .showcase-text h1 {
+    padding: 10px;
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+    text-justify: auto;
+}
+.showcase-text > p{
+    padding: 13px;
+    font-size: 25px;
+    text-align: center;
+    text-justify: auto;
+}
+.showcase-textarea > p{
+    padding: 20px;
+    text-align: center;
+    text-justify: auto;
+    font-size: 15.5px;
+    position: relative;
+
+}
+.showcase-textarea textarea{
+    width: 70%;
+    height: 70%;
+    outline: none;
+    position: absolute;
+
+}
+
+/*Buttons*/
+
+.showcase-header .logo{
+    position: absolute;
+    left: 60px;
+    width: 13%;
+    height: 50px;
+    transform: translateY(25px);
+
+}
+.showcase-header .link-btn{
+    margin: 22px 30px 0 0;
+    top: 5%;
+    right: 15%;
+    position: absolute;
+}
+.showcase-header .btn-rounder{
+  position: absolute;
+  right: 80px;
+  top: 26px;
+  background-color: #e50914;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transform: translateY(3px);
+
+}
+.showcase-textarea .btn-lg{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: azure;
+    background-color: #e50914;
+    width: 30%;
+    height: 70%;
+    position: absolute;
+    padding-top: 8px;
+    padding-left: 14px;
+    font-size: 22px;
+    right: 0;
+
+}
+.showcase-textarea .btn-lg > i{
+    text-decoration: none;
+    color: azure;
+
+
+}
+/*Pampletes*/
+.pampletes{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+
+}
+.pampletes hr{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+}
+
+.pamplete-1{
+    width: 100%;
+    height: 70vh;
+    position: relative;
+}
+.pamplete-2{
+    width: 100%;
+    height: 70vh;
+    position: relative;
+
+}
+.pamplete-3{
+    width: 100%;
+    height: 70vh;
+    position: relative;
+
+}
+.pamplete-4{
+    width: 100%;
+    height: 70vh;
+    position: relative;
+
+
+}
+
+.pamplete-2 .card-2, .pamplete-4 .card-4{
+    top: 30px;
+    right: 40px;
+    width: 40%;
+    height: 80%;
+    position: absolute;
+}
+
+
+.pamplete-1 .card-1, .pamplete-3 .card-3{
+    width: 40%;
+    top: 25px;
+    left: 20px;
+    height: 80%;
+    position: absolute;
+}
+.pamplete-2 h1, .pamplete-4 h1 {
+    font-weight: 600;
+    font-size: 43px;
+    position: absolute;
+    text-align: left;
+    right: 0;
+    top: 18%;
+}
+.pamplete-2 h2, .pamplete-4 h2 {
+    font-weight: lighter;
+    font-size: 27px;
+    position: absolute;
+    text-align: left;
+    bottom: 10%;
+}
+
+ .pamplete-1 h1, .pamplete-3 h1 {
+    top: 25%;
+    font-weight: 600;
+    font-size: 43px;
+    position: absolute;
+    text-align: left;
+
+}
+.pamplete-1 h2, .pamplete-3 h2 {
+    font-weight: lighter;
+    font-size: 27px;
+    position: absolute;
+    text-align: left;
+    bottom: 25%;
+
+}
+
+
+.pamplete-1 img, .pamplete-3 img{
+    top: 10%;
+    bottom: 0px;
+    right: 10px;
+    width: 40%;
+    height: auto;
+    position: absolute;
+}
+.pamplete-2 img, .pamplete-4 img{
+    width: 40%;
+    top: 10%;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    position: absolute;
+}
+.faq-container{
+    height: 90%;
+    width: 90%;
+    margin: 0;
+    position: relative;
+    left: 45px;
+    top: 0;
+}
+.faq{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    flex-direction: column;
+
+}
+.faq h1{
+    top: 10%;
+    font-weight: 700;
+    font-size: 47px;
+    position: absolute;
+    text-align: left;
+    text-transform: capitalize;
+
+}
+.faq button{
+    text-transform: capitalize;
+    height: 13%;
+    width: 80%;
+    top: 30%;
+    margin-bottom: 10px;
+    position: relative;
+    background-color: #46464686;
+    border: none;
+    font-size: 30px;
+    color: white;
+    text-align: left;
+}
+.faq button span{
+    position: absolute;
+    top: 30px;
+    left: 20px;
+}
+.faq-container .showcase-textarea{
+    top: 30px;
+    position: relative;
+    display: inline-block;
+    height: 30%;
+    width: 100%;
+}
+
+.faq-container .showcase-textarea p{
+
+    padding: 20px;
+    text-align: center;
+    text-justify: newspaper;
+    font-size: 22px;
+    position: relative;
+}
+.faq-container .showcase-textarea textarea{
+    left: 100px;
+    position: absolute;
+    height: 30%;
+    width: 60%;
+}
+.faq-container .showcase-textarea .btn-lg{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: azure;
+    background-color: #e50914;
+    width: 20%;
+    height: 30%;
+    position: absolute;
+    padding-top: 12px;
+    padding-left: 25px;
+    font-size: 29px;
+    right: 12%;
+
+}
+.footer{
+    width: 100%;
+    height: 70vh;
+    position: relative;
+}
+.footer hr{
+    position: relative;
+    top: 45%;
+
+}
+.show{
+  display: none;
+}
